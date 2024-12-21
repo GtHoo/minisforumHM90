@@ -12,11 +12,3 @@ What I so far have found out to be "working"
 * Set "IOMMU=Auto" ('Enabled' seems to cause some problems)
 * Reboot
 
-Install OS
-Reboot
-Edit grub.cfg
-add "amd_iommu=force_enable iommu=pt" to the DEFAULT LINUX line.
-Save and recompile grub.
-Reboot
-Enter UEFI and changed "IOMMU=Auto" ('Enabled' seems to cause some problems)
-Save and reboot

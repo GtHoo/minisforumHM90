@@ -6,10 +6,10 @@ For entering bios spam `del` key after pressing the power button.
 
 -----------------
 ## Proxmox
-* Go into bios and disable `IOMMU`, enable `SVM`, disable MBIST (memory MBIST). Also sett the power  manuelly, example on where and how I found some photos online: https://imgur.com/gallery/hm90-bios-settings-power-q6lIFdC
+* In bios disable `IOMMU`, enable `SVM`, disable MBIST (memory MBIST). Also sett the power  manuelly, example on where and how I found some photos online: https://imgur.com/gallery/hm90-bios-settings-power-q6lIFdC
 * Install proxmox.
-* Add "AMD_IOMMU=force_enable iommu=pt"  inside grub `/etc/default/grub`  in the end of line GRUB_CMDLINE_LINUX_DEFAULT inside the `"`
-* Save and recompile grub with `update-grub`
+* Add "AMD_IOMMU=force_enable iommu=pt"  to grub `/etc/default/grub`  in the end of line GRUB_CMDLINE_LINUX_DEFAULT inside the `"`
+* Save and recompile grub `update-grub`
 * Reboot into bios
 * Set "IOMMU=Auto" ('Enabled' seems to cause some problems)
 * Reboot

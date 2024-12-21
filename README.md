@@ -2,6 +2,7 @@
 Having problems with installing a linux distro and keeping it alive without frezzing.
 What I so far have found out to be "working"
 
+For entering bios spam `del` key after pressing the power button.
 -----------------
 ## Proxmox
 * Go into bios and disable `IOMMU`, enable `SVM`, disable MBIST (memory MBIST). Also sett the power  manuelly, example on where and how I found some photos online: https://imgur.com/gallery/hm90-bios-settings-power-q6lIFdC
